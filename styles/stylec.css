@@ -33,6 +33,63 @@ hr {
 }
 
 /* ===================================
+        Header Section
+====================================*/
+
+.header {
+    background-color: #562EFF;
+}
+
+.menu {
+    width: 870px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 0.7fr 2fr;
+    align-items: center;
+}
+
+.logo h2 {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.logo-container .logo img {
+    width: 40.42px;
+    height: 51px;
+}
+
+.manu-bar ul {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.manu-bar ul li:not(:last-child) {
+    padding: 22px 30px;
+}
+
+.manu-bar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* .manu-bar ul {
+    display: flex;
+    list-style: none;
+} */
+
+/* ===================================
         Top players section
 ====================================*/
 .top-players {
@@ -152,8 +209,13 @@ hr {
     color: #A2A2A2;
 }
 
-.fa-star:not(:last-child) {
+.fa-star {
+    font-size: 12px;
     color: #FFC014;
+}
+
+.empty {
+    color: #A2A2A2;
 }
 
 .course-info span {
