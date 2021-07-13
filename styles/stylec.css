@@ -21,7 +21,8 @@ body {
 }
 
 .container {
-    width: 870px;
+    max-width: 870px;
+    margin: 0 auto;
     background-color: #ffffff;
     margin-top: 20px;
     padding: 30px;
@@ -41,7 +42,7 @@ hr {
 }
 
 .menu {
-    width: 870px;
+    max-width: 870px;
     margin: 0 auto;
 }
 
@@ -242,6 +243,22 @@ hr {
 =================================*/
 
 @media screen and (max-width: 480px) {
+    .menu {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .logo-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .logo {
+        grid-template-columns: 0.7fr 3fr;
+    }
+    
+    .manu-bar ul li:not(:last-child) {
+        padding: 5px 20px;
+        justify-content: flex-end;
+    }
+
     .main {
         justify-content: center;
         align-items: flex-start;
@@ -267,6 +284,10 @@ hr {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    
+    .menu {
+        width: 100%;
+    }
     .main {
         align-items: flex-start;
     }
